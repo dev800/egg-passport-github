@@ -16,6 +16,7 @@ function mountOneClient (config, app, client = "github") {
   app.passport.use(client, new Strategy(config, (req, accessToken, refreshToken, params, profile, done) => {
     // format user
     const user = {
+      providerPlatform: 'github',
       providerGroup: 'github',
       provider: client,
       id: profile.id,
