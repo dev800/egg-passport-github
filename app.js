@@ -17,7 +17,7 @@ function mountOneClient (config, app, client = "github") {
     // format user
     const user = {
       providerPlatform: 'github',
-      providerGroup: 'github',
+      providerMedia: 'github',
       provider: client,
       id: profile.id,
       name: profile.username,
